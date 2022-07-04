@@ -24,7 +24,7 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 
-	public static var indiecrossVersion:String = '1.5.1';
+	public static var psychengineVersion:String = '0.6.2';
 	public static var curSelected:Int = 0;
 
 	var optionShit:Array<String> = ['Story_mode', 'freeplay', 'options', 'credits', 'awards'];
@@ -162,7 +162,7 @@ class MainMenuState extends MusicBeatState
 		sketch.y -= 200;
 		add(sketch);
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Indie Cross v" + indiecrossVersion, 12);
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychengineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
